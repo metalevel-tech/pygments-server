@@ -101,6 +101,12 @@ should the need for it arise.
 
 The script [`systemd.deploy.sh`](systemd.deploy.sh) will create a systemd service file and a socket file for you - for more details read the [systemd.units/README.md](systemd.units/README.md) file.
 
+**Quick dependancy fix:** After upgrading my production server to Ubuntu 24.04, the service was down. So as a quick solution I was needed to do: 
+
+```bash
+sudo apt install python3-flask
+```
+
 ## License
 
 [Blue Oak Model License, version 1.0.0][BlueOak-1.0.0].
